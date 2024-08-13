@@ -21,14 +21,6 @@ async function displayPaketHaji() {
     const jadwalKeberangkatan = document.createElement("p");
     jadwalKeberangkatan.className = "jadwal-keberangkatan";
 
-    const tanggalKeberangkatan = new Date(paket.jadwal_keberangkatan);
-    const tanggal = tanggalKeberangkatan.getDate();
-    const bulan = tanggalKeberangkatan.toLocaleString("id-ID", {
-      month: "long",
-    });
-    const tahun = tanggalKeberangkatan.getFullYear();
-    jadwalKeberangkatan.textContent = `${tanggal} ${bulan} ${tahun}`;
-
     const maskapaiPenerbangan = document.createElement("p");
     maskapaiPenerbangan.textContent = paket.maskapaiName;
 
